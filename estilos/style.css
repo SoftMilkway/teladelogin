@@ -1,0 +1,101 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+}
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#login h1 {
+    text-align: center;
+}
+#login {
+    border-radius: 20px;
+    position: absolute;
+    width: 250px;
+    height: 515px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+}
+#imagem {
+    display: block;
+    background: purple url(../imgs/eu.png) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+#formulario {
+    display: block;
+    padding: 10px;
+}
+.campo {
+    background-color: rgb(66, 6, 63);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.campo label {
+    display: none;
+}
+.campo i {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    
+}
+.campo input {
+    font-size: 1em;
+    width: calc(100% - 45px);
+    transform: translateY(-12px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(50, 107, 89);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color:  rgb(16, 34, 28);
+}
+form a {
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    color:  rgb(50, 107, 89);
+    border: 2px solid rgb(50, 107, 89);
+    border-radius: 5px;
+}
+form a:hover {
+    background-color:  rgb(16, 34, 28);
+    color: white;
+}
+    
